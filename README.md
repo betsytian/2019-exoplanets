@@ -1,21 +1,21 @@
 # 2019-exoplanets
 
-# python3 is used
-# From terminal , run the following command. Assumes the script is in the same directory as Swift.
-# Otherwise, give the absolute path to Swift. The script runs for 7 hours, so make sure not to let the computer
-# to sleep in "Energy Saver" setting
+python3 is used
+From terminal , run the following command. Assumes the script is in the same directory as Swift.
+Otherwise, give the absolute path to Swift. The script runs for 7 hours, so make sure not to let the computer
+to sleep in "Energy Saver" setting
 python read_fits.py ./Swift
 
-# The script will produce the following files:
-# coordinates1.txt, uvotsource1.txt
-# coordinates2.txt, uvotsource2.txt
-# coordinates3.txt, uvotsource3.txt
-# coordinates4.txt, uvotsource4.txt
-# coordinates5.txt, uvotsource5.txt
-# coordinates#.txt only contains RA and DEC coordinates, and is used to look up Kepler Target Search webpage.
-# uvotsource#.txt contains more columns of information for the source.
-# Line X in coordinates#.txt and line X in uvotsource#.txt are for same source.
-# Each file has 9000 or less lines, as there is a 10000 line per file restriction in the webpage.
+The script will produce the following files:
+coordinates1.txt, uvotsource1.txt
+coordinates2.txt, uvotsource2.txt
+coordinates3.txt, uvotsource3.txt
+coordinates4.txt, uvotsource4.txt
+coordinates5.txt, uvotsource5.txt
+coordinates#.txt only contains RA and DEC coordinates, and is used to look up Kepler Target Search webpage.
+uvotsource#.txt contains more columns of information for the source.
+Line X in coordinates#.txt and line X in uvotsource#.txt are for same source.
+Each file has 9000 or less lines, as there is a 10000 line per file restriction in the webpage.
 
 # In a web broswer, go to URL http://archive.stsci.edu/kepler/kepler_fov/search.php?form=fuf
 # In "Local File Name (required)", choose coordinates1.txt. Repeat it for coordinates[2-5].txt
